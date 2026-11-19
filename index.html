@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ══ DOMAIN & INDEXING ════════════════════════════════════════════════
+     hedgeespresso.com.au is printed on the café's own menus, but as of
+     this build it does NOT resolve — NXDOMAIN, meaning no DNS records at
+     all (not www, not mail). Anyone typing it off the menu gets an error
+     page. Confirm who holds the registration BEFORE launch.
+
+     The domain appears in exactly these places:
+       index.html    canonical · og:url · footer text · schema "url"
+       gallery.html  canonical · og:url · footer text
+     Change all of them together if the domain turns out to be different.
+
+     The robots tag below keeps this demo out of Google, so it can't get
+     indexed in place of the real site. DELETE IT AT LAUNCH.
+     ═════════════════════════════════════════════════════════════════════ -->
+<title>Hedge Espresso | Café in Salisbury, Brisbane</title>
+<meta name="description" content="Hedge Espresso is a neighbourhood café in Salisbury, Brisbane. Specialty coffee from 6am, breakfast until 11, lunch from 11, seven days. 4.6 stars from 650+ Google reviews.">
+<link rel="canonical" href="https://hedgeespresso.com.au">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hedge Espresso | Café in Salisbury, Brisbane">
+<meta name="twitter:description" content="Hedge Espresso is a neighbourhood café in Salisbury, Brisbane. Specialty coffee from 6am, breakfast until 11, lunch from 11, seven days. 4.6 stars from 650+ Google reviews.">
+<meta name="twitter:image" content="https://hedgeespresso.com.au/hedge-73.jpg">
+<meta name="theme-color" content="#1F4D2E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hedge Espresso | Café in Salisbury, Brisbane">
+<meta property="og:description" content="Specialty coffee from six, breakfast till eleven, lunch from eleven. Open 6am–2pm seven days, on the corner in Salisbury.">
+<meta property="og:url" content="https://hedgeespresso.com.au">
+<meta property="og:image" content="hedge-73.jpg">
+<meta property="og:locale" content="en_AU">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce">
+  <span class="status" id="livestatus">
+    <span class="dotlive" aria-hidden="true"></span>
+    <span id="statustext">Open 6am&ndash;2pm, seven days</span>
+  </span>
+  <span class="sep" aria-hidden="true">&mdash;</span>
+  <span>Breakfast till 11, lunch from 11</span>
+  <span class="sep" aria-hidden="true">&mdash;</span>
+  <span><a href="tel:+61732743018">07&nbsp;3274&nbsp;3018</a></span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brandmark" href="#top"><span class="dot" aria-hidden="true"></span>Hedge Espresso</a>
+  <nav class="navlinks" aria-label="Primary">
+    <a href="menu.html">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#find-us">Find us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="navphone" href="tel:+61732743018">07 3274 3018</a>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <h1 class="hero-title">Hedge <span class="l2">espresso</span></h1>
+      <p class="hero-tag">Salisbury&rsquo;s <span class="ser">local.</span></p>
+      <p class="hero-sub">Coffee done properly, brekkie till 11, lunch after, blankets when it&rsquo;s cold.</p>
+
+      <ul class="chips">
+        <li class="chip">Open today 6am&ndash;2pm</li>
+        <li class="chip"><span class="star" aria-hidden="true">&#9733;</span>4.6 &middot; 650+ Google reviews</li>
+        <li class="chip">Corner of Lillian Ave</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="menu.html">See the menu <span class="arw" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-outline" href="tel:+61732743018">Call to order</a>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <div class="sticker" aria-hidden="true">
+        <svg viewBox="0 0 160 160">
+          <circle class="disc" cx="80" cy="80" r="80"></circle>
+          <path id="badgepath" fill="none" d="M80,80 m-61,0 a61,61 0 1,1 122,0 a61,61 0 1,1 -122,0"></path>
+          <text><textPath href="#badgepath" startOffset="0">HEDGE ESPRESSO &middot; SALISBURY &middot; SINCE EARLY &middot;</textPath></text>
+          <ellipse class="bean" cx="80" cy="80" rx="13" ry="18"></ellipse>
+          <path d="M80 63 C 74 72, 74 88, 80 97" stroke="#A9CF97" stroke-width="2.4" fill="none"></path>
+        </svg>
+      </div>
+
+      <div class="frame">
+        <img src="hedge-73.jpg"
+             srcset="hedge-73-sm.jpg 800w, hedge-73.jpg 1280w"
+             sizes="(min-width:960px) 46vw, 92vw"
+             alt="Hedge Espresso on the corner of Kellett Road, Salisbury" width="1280" height="1600" fetchpriority="high">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>SPECIALTY COFFEE &#10022; EGGS BENEDICT &#10022; MAGIC MANGO ICED TEA &#10022; OPEN 6AM &#10022; 7 DAYS &#10022; BY THE 125 STOP &#10022;&nbsp;</span>
+    <span>SPECIALTY COFFEE &#10022; EGGS BENEDICT &#10022; MAGIC MANGO ICED TEA &#10022; OPEN 6AM &#10022; 7 DAYS &#10022; BY THE 125 STOP &#10022;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ NUMBERS ============ -->
+<section class="light numbers" aria-label="Hedge Espresso by the numbers">
+  <div class="wrap numgrid">
+    <div class="num reveal">
+      <span class="n" data-count="650" data-suffix="+">650+</span>
+      <span class="lbl">Google reviews</span>
+    </div>
+    <div class="num reveal">
+      <span class="n" data-count="4.6" data-decimals="1">4.6</span>
+      <span class="lbl">Average rating</span>
+    </div>
+    <div class="num reveal">
+      <span class="n" data-count="6" data-suffix="am">6am</span>
+      <span class="lbl">We're open</span>
+    </div>
+    <div class="num reveal">
+      <span class="n" data-count="7">7</span>
+      <span class="lbl">Days a week</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY + PRACTICALS ============ -->
+<section class="light" style="padding-top:0">
+  <div class="wrap">
+    <div style="max-width:940px">
+      <p class="eyebrow reveal">The local</p>
+      <h2 class="h2 reveal" style="margin-bottom:26px">A café worth<br>walking to.</h2>
+      <div class="reveal" style="display:grid;grid-template-columns:1fr;gap:22px;max-width:62ch">
+        <p style="margin:0;font-size:clamp(1.08rem,2.2vw,1.28rem);line-height:1.5;font-weight:500;letter-spacing:-.015em">
+          We&rsquo;re on the corner of Lillian Ave in Salisbury, a few steps from the 125 stop. Some people
+          find us by accident. Most of them come back the next morning.
+        </p>
+        <p style="margin:0;color:var(--espresso-soft)">
+          We open at six because plenty of you start early. Breakfast runs until eleven, lunch picks up
+          from there, and the cabinet is full of sweet things all day. Free-range eggs, and most of the menu can be
+          made gluten-free, dairy-free or vegan. The eggs benedict is the one everyone orders, and
+          when Brisbane turns on a cold morning there are blankets on the chairs. Order at the
+          counter, we&rsquo;ll have it out to you quickly, and we&rsquo;ll remember it next time.
+        </p>
+      </div>
+    </div>
+
+    <div class="practicals reveal">
+      <div class="pract">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5l3.5 2" stroke-linecap="round"></path></svg>
+        <div><b>Open at six</b><span>Seven days, every week of the year.</span></div>
+      </div>
+      <div class="pract">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="12" rx="2.5"></rect><path d="M4 10h16M7.5 20v-2M16.5 20v-2" stroke-linecap="round"></path><circle cx="8" cy="13.2" r="1.1" fill="currentColor" stroke="none"></circle><circle cx="16" cy="13.2" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        <div><b>By the 125 stop</b><span>Step off the bus and you&rsquo;re at the door.</span></div>
+      </div>
+      <div class="pract">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16.5v-4l2-5h12l2 5v4" stroke-linecap="round"></path><path d="M4 16.5h16M6.5 19.5v-3M17.5 19.5v-3" stroke-linecap="round"></path></svg>
+        <div><b>Street parking</b><span>Free on Lillian Ave and around the corner.</span></div>
+      </div>
+      <div class="pract">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h11v5a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V8Z"></path><path d="M16 9.5h2.2a2.3 2.3 0 0 1 0 4.6H16" stroke-linecap="round"></path><path d="M6 4.5c1 1 1 1.6 0 2.6M10.5 4.5c1 1 1 1.6 0 2.6" stroke-linecap="round"></path></svg>
+        <div><b>Quick at the counter</b><span>Takeaway in and out in a few minutes.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU HIGHLIGHTS ============ -->
+<!-- Six signature items only. The full 61-item menu lives on menu.html,
+     the way the big restaurant sites do it. -->
+<section class="dark menu" id="menu">
+  <div class="wrap">
+
+    <div class="menu-head reveal">
+      <div>
+        <p class="eyebrow">What we make</p>
+        <h2 class="h2">A taste of it.</h2>
+      </div>
+      <p class="menu-note">Coffee from six, breakfast until eleven, lunch from eleven. Free-range eggs, and most of the menu can be made gluten-free, dairy-free or vegan.</p>
+    </div>
+
+    <div class="highlights reveal">
+
+      <article class="hicard">
+        <div class="top"><h3>Eggs benedict</h3><span class="price">from $21.50</span></div>
+        <p>Two soft poached eggs on artisan sourdough with wilted spinach and hollandaise. Bacon, salmon or halloumi.</p>
+        <span class="fav">Local favourite</span>
+      </article>
+
+      <article class="hicard">
+        <div class="top"><h3>Corn &amp; zucchini fritter</h3><span class="price">$19.50</span></div>
+        <p>With zesty cr&egrave;me fra&icirc;che, poached egg, grilled halloumi and watercress.</p>
+      </article>
+
+      <article class="hicard">
+        <div class="top"><h3>Hedge fully loaded</h3><span class="price">$27.50</span></div>
+        <p>Two poached eggs on sourdough with bacon, pork sausage, baked beans, tomato, hash brown, halloumi and spinach.</p>
+      </article>
+
+      <article class="hicard">
+        <div class="top"><h3>George&rsquo;s chicken souvlaki</h3><span class="price">$23.00</span></div>
+        <p>Chicken skewers with Greek salad, chips and a side of dipping sauce. From eleven.</p>
+      </article>
+
+      <article class="hicard">
+        <div class="top"><h3>Flat white</h3><span class="price">from $5.00</span></div>
+        <p>Our house espresso, poured properly. Small, medium or large, any milk you like.</p>
+        <span class="fav">Local favourite</span>
+      </article>
+
+      <article class="hicard">
+        <div class="top"><h3>Magic Mango iced tea</h3><span class="price">$6.00</span></div>
+        <p>One of four iced teas, and the one that gets Salisbury through summer.</p>
+        <span class="fav">Local favourite</span>
+      </article>
+
+    </div>
+
+    <div class="menu-cta reveal">
+      <p>Plus cakes, kids&rsquo; meals and the whole drinks list</p>
+      <a class="btn btn-primary" href="menu.html">See the full menu <span class="arw" aria-hidden="true">&rarr;</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="light" id="gallery">
+  <div class="wrap">
+    <div class="gal-head reveal">
+      <p class="eyebrow">Have a look</p>
+      <h2 class="h2">The corner on a <span class="ser">good day.</span></h2>
+    </div>
+
+    <!-- Five picks only. Everything else lives on gallery.html.
+         Kept as static HTML so Google indexes these images. -->
+    <div class="gallery-grid reveal">
+      <figure class="shot g-big">
+        <img src="hedge-03.jpg"
+             srcset="hedge-03-sm.jpg 800w, hedge-03.jpg 1600w"
+             sizes="(min-width:860px) 300px, 48vw"
+                         alt="Garlic mushrooms and greens on toasted sourdough" loading="lazy" width="1080" height="1350">
+      </figure>
+
+      <figure class="shot">
+        <img src="hedge-67.jpg"
+             srcset="hedge-67-sm.jpg 800w, hedge-67.jpg 1600w"
+             sizes="(min-width:860px) 300px, 48vw"
+                         alt="Three of the Hedge Espresso team outside, in front of the hedge sign" loading="lazy" width="1280" height="1600">
+      </figure>
+
+      <figure class="shot">
+        <img src="hedge-69.jpg"
+             srcset="hedge-69-sm.jpg 800w, hedge-69.jpg 1600w"
+             sizes="(min-width:860px) 300px, 48vw"
+                         alt="A latte with rosetta art, held in both hands" loading="lazy" width="1280" height="1600">
+      </figure>
+
+      <figure class="shot">
+        <img src="hedge-51.jpg"
+             srcset="hedge-51-sm.jpg 800w, hedge-51.jpg 1600w"
+             sizes="(min-width:860px) 300px, 48vw"
+                         alt="Pistachio and rosewater cake topped with cream and rose petals" loading="lazy" width="1280" height="1600">
+      </figure>
+
+      <figure class="shot">
+        <img src="hedge-35.jpg"
+             srcset="hedge-35-sm.jpg 800w, hedge-35.jpg 1600w"
+             sizes="(min-width:860px) 300px, 48vw"
+                         alt="The footpath chalkboard - a yawn is a silent scream for coffee" loading="lazy" width="1280" height="1600">
+      </figure>
+    </div>
+
+    <div class="gal-more reveal">
+      <p>Coffee &middot; Brekkie &middot; Inside &middot; The corner</p>
+      <a class="btn btn-dark" href="gallery.html">See all photos <span class="arw" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<!-- Real reviews from the café's public Google listing, trimmed for length
+     (cuts marked with an ellipsis), wording otherwise verbatim. Surnames
+     reduced to an initial. -->
+<section class="leafblock">
+  <div class="wrap">
+    <div class="rev-head reveal">
+      <p class="eyebrow">What the locals say</p>
+      <h2 class="h2" style="margin-bottom:26px">Ask anyone<br>on the street.</h2>
+
+      <div class="ratingbadge">
+        <span class="score">4.6</span>
+        <span>
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="meta">650+ Google reviews</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="rev-grid">
+      <figure class="rev reveal">
+        <span class="qm" aria-hidden="true">&ldquo;</span>
+        <span class="stars5" aria-label="Five out of five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p>I&rsquo;ve always seen the place while waiting for the 125 bus to come but never order from
+        there. I tried for the first time today and I&rsquo;m sorry that I didn&rsquo;t order here
+        sooner! I got the eggs benedict with bacon and it was honestly one of the best I ever had!
+        The mango magic ice tea was also delicious!</p>
+        <figcaption>&mdash; Jack M.<span class="when">Google review</span></figcaption>
+      </figure>
+
+      <figure class="rev reveal">
+        <span class="qm" aria-hidden="true">&ldquo;</span>
+        <span class="stars5" aria-label="Five out of five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p>On a corner in the lovely suburb of Salisbury is one of the best Cafes I&rsquo;ve ever been
+        to. It&rsquo;s cosy, so much so there were blankets on the chairs to snuggle on the cold rainy
+        day. Every meal was well presented and absolutely delicious at a very reasonable price
+        &hellip; the staff were welcoming, courteous, professional, friendly and happy.</p>
+        <figcaption>&mdash; Sue M.<span class="when">Google review &middot; Local Guide</span></figcaption>
+      </figure>
+
+      <figure class="rev reveal">
+        <span class="qm" aria-hidden="true">&ldquo;</span>
+        <span class="stars5" aria-label="Five out of five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p>We &hellip; were recommended as being &lsquo;The&rsquo; local for good coffee and
+        atmosphere. Sarah was correct! Great coffee, very friendly staff with fast and efficient
+        service. Ventured into the breakfast arena as well &mdash; tasty and well priced.</p>
+        <figcaption>&mdash; Steven H.<span class="when">Google review &middot; Local Guide</span></figcaption>
+      </figure>
+    </div>
+
+    <p class="rev-tag reveal">From our <a href="https://www.google.com/maps/search/?api=1&amp;query=Hedge+Espresso+Salisbury+QLD+4107" target="_blank" rel="noopener">Google reviews</a> &mdash; 4.6 stars from 650+ of you.</p>
+  </div>
+</section>
+
+<!-- ============ FIND US ============ -->
+<section class="light" id="find-us">
+  <div class="wrap">
+    <div class="find-grid">
+
+      <div class="reveal">
+        <p class="eyebrow">Find us</p>
+        <h2 class="h2" style="margin-bottom:26px">On the corner.</h2>
+
+        <address class="addr">
+          4/94&ndash;96 Lillian Ave<br>
+          Salisbury QLD 4107<br>
+          <a href="tel:+61732743018" style="color:var(--hedge);font-family:var(--mono);font-weight:700;font-size:16px;text-decoration:none;border-bottom:2px solid var(--leaf)">07 3274 3018</a>
+        </address>
+
+        <table class="hours-table" id="hours">
+          <caption class="sr-only">Opening hours for Hedge Espresso</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Monday</th><td>6:00am &ndash; 2:00pm</td></tr>
+            <tr data-day="2"><th scope="row">Tuesday</th><td>6:00am &ndash; 2:00pm</td></tr>
+            <tr data-day="3"><th scope="row">Wednesday</th><td>6:00am &ndash; 2:00pm</td></tr>
+            <tr data-day="4"><th scope="row">Thursday</th><td>6:00am &ndash; 2:00pm</td></tr>
+            <tr data-day="5"><th scope="row">Friday</th><td>6:00am &ndash; 2:00pm</td></tr>
+            <tr data-day="6"><th scope="row">Saturday</th><td>6:00am &ndash; 2:00pm</td></tr>
+            <tr data-day="0"><th scope="row">Sunday</th><td>6:00am &ndash; 2:00pm</td></tr>
+          </tbody>
+        </table>
+
+        <p class="practical">
+          <strong>Getting here.</strong> We&rsquo;re the corner site, right by the <strong>125 bus stop</strong> &mdash;
+          hop off and you&rsquo;re at the door. There&rsquo;s free street parking on Lillian Ave and around the corner,
+          and it&rsquo;s easiest before about half seven.
+        </p>
+
+        <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=4%2F94-96%20Lillian%20Ave%2C%20Salisbury%20QLD%204107" target="_blank" rel="noopener">
+          Get directions <span class="arw" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+      <div class="mapbox reveal">
+        <iframe
+          title="Map showing Hedge Espresso at 4/94-96 Lillian Ave, Salisbury QLD 4107"
+          src="https://www.google.com/maps?q=4%2F94-96%20Lillian%20Ave%2C%20Salisbury%20QLD%204107&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="light" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="reveal">
+        <p class="eyebrow">Say hello</p>
+        <h2 class="h2" style="margin-bottom:24px">Give us a ring.</h2>
+
+        <a class="calllink" href="tel:+61732743018">07 3274 3018</a>
+
+        <p style="margin:0 0 24px;color:var(--espresso-soft);max-width:34ch">
+          Easiest for orders and quick questions &mdash; someone&rsquo;s behind the counter from six every morning.
+        </p>
+
+        <ul class="socials">
+          <li>
+            <a class="social" href="https://www.instagram.com/hedge_espresso_/" target="_blank" rel="noopener"
+               aria-label="Hedge Espresso on Instagram, @hedge_espresso_">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"></rect>
+                <circle cx="12" cy="12" r="4.2"></circle>
+                <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"></circle>
+              </svg>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <!-- If the vanity URL below is ever wrong, the owner-supplied share
+               link was: https://www.facebook.com/share/1D2TcQQgB2/ -->
+            <a class="social" href="https://www.facebook.com/hedgeespresso/" target="_blank" rel="noopener"
+               aria-label="Hedge Espresso on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                <path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l.8-4H12V7.7c0-.6.4-1 1-1h2Z"></path>
+              </svg>
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="formcard reveal">
+
+        <form id="booking-form" action="https://formspree.io/f/mgakawbl" method="POST" novalidate>
+          <h3>Catering &amp; group bookings</h3>
+          <p class="lede">Office catering, a big table on the weekend, or a coffee cart for something local &mdash; tell us what you need and we&rsquo;ll come back to you.</p>
+
+          <!-- Sets the subject line of the email Nicole receives, so a real
+               enquiry stands out in a busy inbox. -->
+          <input type="hidden" name="_subject" value="Catering enquiry from hedgeespresso.com.au">
+
+          <div class="fields">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="0400 000 000" required>
+            </div>
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="f-size">Group size</label>
+              <input id="f-size" name="group_size" type="number" min="1" step="1" placeholder="12" inputmode="numeric">
+            </div>
+            <div class="field f-full">
+              <label for="f-msg">What do you need?</label>
+              <textarea id="f-msg" name="message" placeholder="Coffee and pastries for twelve, Thursday morning&hellip;"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send enquiry <span class="arw" aria-hidden="true">&rarr;</span></button>
+          <p class="formnote" id="form-note" role="status">We&rsquo;ll get back to you the same day where we can.</p>
+        </form>
+
+        <div class="thanks" id="thanks" role="status">
+          <div class="tick" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#14300c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"></path></svg>
+          </div>
+          <h3>Thanks &mdash; that&rsquo;s come through.</h3>
+          <p>We&rsquo;ll be in touch shortly. If it&rsquo;s urgent, ring us on <a href="tel:+61732743018" style="color:var(--leaf-soft)">07 3274 3018</a>.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- newsletter -->
+    <div class="signup reveal" style="margin-top:clamp(40px,5vw,64px)">
+      <div>
+        <h3>Know before you walk down.</h3>
+        <p>Every so often: a new thing on the board, public holiday hours, and the odd day we&rsquo;re closed. Nothing else.</p>
+      </div>
+      <div>
+        <form id="signup-form" action="https://formspree.io/f/xbgogrne" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Newsletter signup from hedgeespresso.com.au">
+          <div class="signup-row">
+            <label class="sr-only" for="s-email">Email address</label>
+            <input id="s-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <button class="btn btn-primary" type="submit">Sign up <span class="arw" aria-hidden="true">&rarr;</span></button>
+          </div>
+          <p class="signup-note" id="signup-note">No spam. Unsubscribe any time.</p>
+        </form>
+        <p class="signup-done" id="signup-done">Thanks &mdash; you&rsquo;re on the list. See you in the morning.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+
+      <div>
+        <h2>Hedge <span>Espresso</span></h2>
+        <p>The local for good coffee in Salisbury, Brisbane. Open early, seven days.</p>
+      </div>
+
+      <div>
+        <h4>Find us</h4>
+        <address>
+          4/94&ndash;96 Lillian Ave<br>
+          Salisbury QLD 4107<br>
+          <a href="tel:+61732743018">07 3274 3018</a>
+        </address>
+      </div>
+
+      <div>
+        <h4>Hours</h4>
+        <p>Seven days<br>6:00am &ndash; 2:00pm</p>
+        <p style="margin-top:14px"><a href="menu.html">Menu</a> &middot; <a href="#gallery">Gallery</a> &middot; <a href="#find-us">Find us</a></p>
+      </div>
+
+    </div>
+
+
+    <div class="foot-base">
+      <span>&copy; <span id="yr">2026</span> Hedge Espresso &middot; operated by Hedge Hospitality Pty Ltd &middot; ABN 24&nbsp;699&nbsp;491&nbsp;202 &middot; hedgeespresso.com.au</span>
+      <span>Website by AI Automate AU</span>
+    </div>
+  </div>
+</footer>
+<!-- ============ LOCAL BUSINESS SCHEMA ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Hedge Espresso",
+  "url": "https://hedgeespresso.com.au",
+  "image": "hedge-73.jpg",
+  "telephone": "+61732743018",
+  "servesCuisine": [
+    "Coffee",
+    "Breakfast",
+    "Lunch"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4/94-96 Lillian Ave",
+    "addressLocality": "Salisbury",
+    "addressRegion": "QLD",
+    "postalCode": "4107",
+    "addressCountry": "AU"
+  },
+  "sameAs": [
+    "https://www.instagram.com/hedge_espresso_/",
+    "https://www.facebook.com/hedgeespresso/"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "650"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "06:00",
+      "closes": "14:00"
+    }
+  ],
+  "hasMenu": "https://hedgeespresso.com.au/menu.html",
+  "priceRange": "$$",
+  "currenciesAccepted": "AUD",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -27.553331,
+    "longitude": 153.025363
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=-27.553331,153.025363"
+}
+</script>
+
+<script src="site.js" defer></script>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<div class="mobilebar">
+  <a class="btn btn-primary" href="menu.html">Menu</a>
+  <a class="btn btn-outline" href="gallery.html">Photos</a>
+  <a class="btn btn-outline" href="tel:+61732743018">Call</a>
+</div>
+
+</body>
+</html>

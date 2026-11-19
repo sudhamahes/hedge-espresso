@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ══ DOMAIN & INDEXING ════════════════════════════════════════════════
+     hedgeespresso.com.au is printed on the café's own menus, but as of
+     this build it does NOT resolve — NXDOMAIN, meaning no DNS records at
+     all (not www, not mail). Anyone typing it off the menu gets an error
+     page. Confirm who holds the registration BEFORE launch.
+
+     The domain appears in exactly these places:
+       index.html    canonical · og:url · footer text · schema "url"
+       gallery.html  canonical · og:url · footer text
+     Change all of them together if the domain turns out to be different.
+
+     The robots tag below keeps this demo out of Google, so it can't get
+     indexed in place of the real site. DELETE IT AT LAUNCH.
+     ═════════════════════════════════════════════════════════════════════ -->
+<title>Photos | Hedge Espresso, Café in Salisbury Brisbane</title>
+<meta name="description" content="Photos of Hedge Espresso — our coffee, breakfast and lunch, the room, and the corner shopfront on Lillian Ave, Salisbury, Brisbane.">
+<link rel="canonical" href="https://hedgeespresso.com.au/gallery.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Photos | Hedge Espresso, Café in Salisbury Brisbane">
+<meta name="twitter:description" content="Photos of Hedge Espresso — our coffee, breakfast and lunch, the room, and the corner shopfront on Lillian Ave, Salisbury, Brisbane.">
+<meta name="twitter:image" content="https://hedgeespresso.com.au/hedge-51.jpg">
+<meta name="theme-color" content="#1F4D2E">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Photos | Hedge Espresso, Salisbury">
+<meta property="og:description" content="A look around our café on the corner of Lillian Ave, Salisbury.">
+<meta property="og:url" content="https://hedgeespresso.com.au/gallery.html">
+<meta property="og:image" content="owner-photo-2.jpg">
+<meta property="og:locale" content="en_AU">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     THE PHOTO LIST — this is the only part you need to edit.
+
+     These are Hedge Espresso's own photos. The files sit in the same
+     folder as this page, named hedge-01.jpg and so on.
+
+     Each line has four parts:
+       n    : the photo's number (matches the filename)
+       file : the filename, lowercase, exactly as saved
+       alt  : a plain description. It is read aloud to blind visitors
+              and read by Google, so keep it describing the photo.
+       cat  : which section it sits in — coffee, food, sweets or place
+
+     To take a photo off the site, delete its line. To add one, copy a
+     line and change the number and the description. Nothing else needs
+     changing — the page builds the grids from this list.
+     ═══════════════════════════════════════════════════════════════════ -->
+<script>
+var PHOTOS = [
+
+  /* ---- COFFEE & DRINKS (15) ---- */
+  { n:69, file:'hedge-69.jpg', alt:'A latte with rosetta art, held in both hands',                    cat:'coffee' },
+  { n:19, file:'hedge-19.jpg', alt:'Steamed milk being poured into a latte in a red cup',             cat:'coffee' },
+  { n:57, file:'hedge-57.jpg', alt:'Two lattes in red cups on the menu, seen from above',             cat:'coffee' },
+  { n:72, file:'hedge-72.jpg', alt:'Freshly ground coffee dosed into an espresso portafilter',        cat:'coffee' },
+  { n:32, file:'hedge-32.jpg', alt:'Red cups warming on top of the espresso machine',                 cat:'coffee' },
+  { n:10, file:'hedge-10.jpg', alt:'An iced coffee on the window bench',                              cat:'coffee' },
+  { n:23, file:'hedge-23.jpg', alt:'Two iced coffees with ice cream, backlit by the window',          cat:'coffee' },
+  { n:24, file:'hedge-24.jpg', alt:'Bags of Burundi and Peru single-origin coffee beans',             cat:'coffee' },
+  { n:26, file:'hedge-26.jpg', alt:'A bag of Peru Cutervo single-origin beans on the timber counter', cat:'coffee' },
+  { n:27, file:'hedge-27.jpg', alt:'Bear Bones coffee bags lined up on the counter',                  cat:'coffee' },
+  { n:25, file:'hedge-25.jpg', alt:'Retail shelves of coffee beans beside the counter',               cat:'coffee' },
+  { n:68, file:'hedge-68.jpg', alt:'A barista pulling shots behind the machine',                      cat:'coffee' },
+  { n:29, file:'hedge-29.jpg', alt:'Tamping a shot at the espresso machine',                          cat:'coffee' },
+  { n:58, file:'hedge-58.jpg', alt:'Steaming milk behind the counter',                                cat:'coffee' },
+  { n:70, file:'hedge-70.jpg', alt:'Behind the counter between the grinders',                         cat:'coffee' },
+
+  /* ---- BREAKFAST & LUNCH (18) ---- */
+  { n: 3, file:'hedge-03.jpg', alt:'Garlic mushrooms and greens on toasted sourdough',                cat:'food' },
+  { n: 2, file:'hedge-02.jpg', alt:'Mushroom toast topped with frisee',                               cat:'food' },
+  { n:12, file:'hedge-12.jpg', alt:'Smashed avocado on toast with a poached egg and micro herbs',     cat:'food' },
+  { n:60, file:'hedge-60.jpg', alt:'Avocado toast with feta, chilli and a poached egg',               cat:'food' },
+  { n:15, file:'hedge-15.jpg', alt:'Eggs benedict with hollandaise, carried to the table',            cat:'food' },
+  { n:62, file:'hedge-62.jpg', alt:'Eggs benedict with bacon on toasted sourdough',                   cat:'food' },
+  { n:13, file:'hedge-13.jpg', alt:'Poached eggs and bacon with avocado and micro herbs',             cat:'food' },
+  { n:38, file:'hedge-38.jpg', alt:'The big breakfast - bacon, poached eggs, relish and sourdough',   cat:'food' },
+  { n:39, file:'hedge-39.jpg', alt:'A big breakfast plate being set down on the table',               cat:'food' },
+  { n:16, file:'hedge-16.jpg', alt:'A corn fritter stack with poached egg and hollandaise',           cat:'food' },
+  { n:54, file:'hedge-54.jpg', alt:'Two plates - a corn fritter stack and eggs benedict',             cat:'food' },
+  { n:14, file:'hedge-14.jpg', alt:'Waffles with strawberries, cream and ice cream',                  cat:'food' },
+  { n:61, file:'hedge-61.jpg', alt:'Hash browns, a fried egg and house-made beans',                   cat:'food' },
+  { n:18, file:'hedge-18.jpg', alt:'Scrambled eggs on sourdough with relish and strawberries',        cat:'food' },
+  { n:17, file:'hedge-17.jpg', alt:'A tray of muffins fresh from the oven',                           cat:'food' },
+  { n: 1, file:'hedge-01.jpg', alt:'Chia puddings layered with fresh fruit',                          cat:'food' },
+  { n:77, file:'hedge-77.jpg', alt:'Two avocado toasts and coffees on an outdoor table',              cat:'food' },
+  { n:71, file:'hedge-71.jpg', alt:'Two plates carried out to the verandah tables',                   cat:'food' },
+
+  /* ---- CAKES & BAKING (7) ---- */
+  { n:51, file:'hedge-51.jpg', alt:'Pistachio and rosewater cake topped with cream and rose petals',  cat:'sweets' },
+  { n:11, file:'hedge-11.jpg', alt:'A slice of pistachio and rosewater cake',                         cat:'sweets' },
+  { n:50, file:'hedge-50.jpg', alt:'Pistachio and rosewater cake on the counter',                     cat:'sweets' },
+  { n:41, file:'hedge-41.jpg', alt:'Banana bread and cake on timber boards',                          cat:'sweets' },
+  { n:49, file:'hedge-49.jpg', alt:'A loaf of house-made banana bread',                               cat:'sweets' },
+  { n:52, file:'hedge-52.jpg', alt:'A bundt cake under thick white icing',                            cat:'sweets' },
+  { n:43, file:'hedge-43.jpg', alt:'The cake cabinet, with the resident hedgehog keeping watch',      cat:'sweets' },
+
+  /* ---- THE TEAM (7) ---- */
+  { n:67, file:'hedge-67.jpg', alt:'Three of the Hedge Espresso team outside, in front of the hedge sign', cat:'team' },
+  { n: 8, file:'hedge-08.jpg', alt:'Four of the team around a table of knitted animals',                    cat:'team' },
+  { n:36, file:'hedge-36.jpg', alt:'Two of the team taking a break by the front windows',                   cat:'team' },
+  { n: 9, file:'hedge-09.jpg', alt:'Two of the team framing one of the knitted hedgehogs',            cat:'team' },
+  { n:28, file:'hedge-28.jpg', alt:'One of the team with a fresh cake and a loaf of banana bread',    cat:'team' },
+  { n:22, file:'hedge-22.jpg', alt:'One of the team holding a bag of Bear Bones beans at the counter', cat:'team' },
+  { n:53, file:'hedge-53.jpg', alt:'One of the team with the knitted hedgehogs on the leather bench', cat:'team' },
+
+  /* ---- THE PLACE (13) ---- */
+  { n:73, file:'hedge-73.jpg', alt:'Hedge Espresso from Kellett Road, Salisbury',                     cat:'place' },
+  { n:44, file:'hedge-44.jpg', alt:'The shopfront behind its blue picket fence',                      cat:'place' },
+  { n:47, file:'hedge-47.jpg', alt:'Verandah seating under the awning',                               cat:'place' },
+  { n:64, file:'hedge-64.jpg', alt:'The counter beneath the hand-painted Hedge sign',                 cat:'place' },
+  { n:46, file:'hedge-46.jpg', alt:'Ordering at the counter',                                         cat:'place' },
+  { n:79, file:'hedge-79.jpg', alt:'Inside, looking out through the timber windows',                  cat:'place' },
+  { n:80, file:'hedge-80.jpg', alt:'The espresso machine and glassware behind the counter',           cat:'place' },
+  { n:35, file:'hedge-35.jpg', alt:'The footpath chalkboard - a yawn is a silent scream for coffee',  cat:'place' },
+  { n:63, file:'hedge-63.jpg', alt:'The covered outdoor seating area',                                cat:'place' },
+  { n:66, file:'hedge-66.jpg', alt:'A dog waiting patiently at an outdoor table',                     cat:'place' },
+  { n: 6, file:'hedge-06.jpg', alt:'Coffee handed through the window under the Hedge sign',           cat:'place' },
+  { n:31, file:'hedge-31.jpg', alt:'The collection of knitted animals along the window bench',        cat:'place' },
+  { n:34, file:'hedge-34.jpg', alt:'The kitchen pass during a breakfast service',                     cat:'place' },
+
+];
+
+/* The sections, in the order they appear on the page.
+   Change a title or blurb here; leave the keys alone unless you also
+   change the matching 'cat' values above. */
+var CATEGORIES = [
+  { key:'coffee', title:'Coffee & drinks',
+    blurb:'Specialty coffee poured all morning, plus the iced drinks that get Salisbury through summer.' },
+  { key:'food',   title:'Brekkie & lunch',
+    blurb:'Breakfast runs until eleven, then lunch takes over — fritters, salads, souvlaki and sandwiches.' },
+  { key:'sweets', title:'Cakes & sweets',
+    blurb:'The cabinet changes through the week. Come early if you want a particular slice.' },
+  { key:'place',  title:'The café & the corner',
+    blurb:'Inside, outside, and the corner it all sits on — a few steps from the 125 stop.' },
+  { key:'team',   title:'The team',
+    blurb:'The people who open at six and remember how you take it.' }
+];
+
+/* Photos shown in a section before the "Show more" button appears. */
+var SHOW_FIRST = 8;
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Hedge Espresso",
+      "item": "https://hedgeespresso.com.au/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Photos",
+      "item": "https://hedgeespresso.com.au/gallery.html"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce">
+  <span class="status" id="livestatus">
+    <span class="dotlive" aria-hidden="true"></span>
+    <span id="statustext">Open 6am&ndash;2pm, seven days</span>
+  </span>
+  <span class="sep" aria-hidden="true">&mdash;</span>
+  <span>Brekkie served till we close</span>
+  <span class="sep" aria-hidden="true">&mdash;</span>
+  <span><a href="tel:+61732743018">07&nbsp;3274&nbsp;3018</a></span>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brandmark" href="index.html"><span class="dot" aria-hidden="true"></span>Hedge Espresso</a>
+  <nav class="navlinks" aria-label="Primary">
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
+    <a href="index.html#find-us">Find us</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <a class="navphone" href="tel:+61732743018">07 3274 3018</a>
+</header>
+
+<main id="top">
+
+<!-- ============ PAGE HEAD ============ -->
+<section class="galhead">
+  <div class="wrap">
+    <a class="backlink" href="index.html"><span class="arw" aria-hidden="true">&larr;</span> Back to the café</a>
+    <h1 class="h2">Have a proper <span class="ser">look around.</span></h1>
+    <p>The coffee, the food, the room and the corner it sits on. Photos are ours, taken at the café in Salisbury.</p>
+
+    <ul class="catnav" id="catnav"></ul>
+  </div>
+</section>
+
+<!-- ============ THE PHOTOS ============ -->
+<div class="light" id="galleries">
+  <noscript>
+    <div class="wrap" style="padding-block:60px">
+      <p class="nojs">Our photo gallery needs JavaScript switched on to load. You can still see
+      the highlights, the menu and our hours on <a href="index.html">the main page</a>, or ring us
+      on <a href="tel:+61732743018">07 3274 3018</a>.</p>
+    </div>
+  </noscript>
+</div>
+
+<!-- ============ TAIL CTA ============ -->
+<section class="leafblock">
+  <div class="wrap" style="text-align:center">
+    <h2 class="h2" style="margin-bottom:18px">Come and see<br>it in person.</h2>
+    <p style="margin:0 auto 30px;max-width:44ch;font-size:17px;line-height:1.55">
+      We&rsquo;re open 6am to 2pm, seven days, on the corner of Lillian Ave in Salisbury.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
+      <a class="btn btn-dark" href="menu.html">See the menu <span class="arw" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn-dark" href="tel:+61732743018">Call 07 3274 3018</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+
+      <div>
+        <h2>Hedge <span>Espresso</span></h2>
+        <p>The local for good coffee in Salisbury, Brisbane. Open early, seven days.</p>
+      </div>
+
+      <div>
+        <h4>Find us</h4>
+        <address>
+          4/94&ndash;96 Lillian Ave<br>
+          Salisbury QLD 4107<br>
+          <a href="tel:+61732743018">07 3274 3018</a>
+        </address>
+      </div>
+
+      <div>
+        <h4>Hours</h4>
+        <p>Seven days<br>6:00am &ndash; 2:00pm</p>
+        <p style="margin-top:14px"><a href="menu.html">Menu</a> &middot; <a href="gallery.html">Gallery</a> &middot; <a href="index.html#find-us">Find us</a></p>
+      </div>
+
+    </div>
+
+
+    <div class="foot-base">
+      <span>&copy; <span id="yr">2026</span> Hedge Espresso &middot; operated by Hedge Hospitality Pty Ltd &middot; ABN 24&nbsp;699&nbsp;491&nbsp;202 &middot; hedgeespresso.com.au</span>
+      <span>Website by AI Automate AU</span>
+    </div>
+  </div>
+</footer>
+<!-- Builds the grids from the list at the top of this file. -->
+<script>
+(function(){
+  'use strict';
+
+  var host   = document.getElementById('galleries');
+  var catnav = document.getElementById('catnav');
+  if (!host || typeof PHOTOS === 'undefined') return;
+
+  function el(tag, cls){
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    return n;
+  }
+
+  CATEGORIES.forEach(function(cat){
+    var shots = PHOTOS.filter(function(p){ return p.cat === cat.key; });
+
+    /* an empty category is skipped entirely, so photos can be added
+       a few at a time without leaving gaps on the page */
+    if (!shots.length) return;
+
+    var sec = el('section', 'catsec');
+    sec.id = cat.key;
+
+    var wrap = el('div', 'wrap');
+
+    var head = el('div', 'cathead');
+    var h2 = el('h2');
+    h2.textContent = cat.title;
+    head.appendChild(h2);
+    wrap.appendChild(head);
+
+    if (cat.blurb) {
+      var blurb = el('p', 'catblurb');
+      blurb.textContent = cat.blurb;
+      wrap.appendChild(blurb);
+    }
+
+    var grid = el('div', 'gal-grid reveal');
+
+    shots.forEach(function(p, i){
+      var fig = el('figure', 'shot' + (i >= SHOW_FIRST ? ' tucked' : ''));
+
+      var img = el('img');
+      img.alt = p.alt || '';
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.width = 800;
+      img.height = 800;
+      /* Let the browser pick a size: phones take the 800px copy and
+         download roughly a third of what the full file costs. */
+      var small = p.file.replace(/\.jpg$/, '-sm.jpg');
+      img.srcset = small + ' 800w, ' + p.file + ' 1600w';
+      img.sizes  = '(min-width:1040px) 290px, (min-width:620px) 33vw, 50vw';
+      img.src = p.file;
+
+
+      fig.appendChild(img);
+      grid.appendChild(fig);
+    });
+
+    wrap.appendChild(grid);
+
+    /* show more, only when there is something hidden */
+    if (shots.length > SHOW_FIRST) {
+      var moreWrap = el('div', 'showmore-wrap');
+      var btn = el('button', 'btn btn-dark');
+      var hiddenCount = shots.length - SHOW_FIRST;
+      btn.type = 'button';
+      btn.innerHTML = 'Show ' + hiddenCount + ' more <span class="arw" aria-hidden="true">&darr;</span>';
+      btn.addEventListener('click', function(){
+        grid.querySelectorAll('.shot.tucked').forEach(function(f){ f.classList.remove('tucked'); });
+        moreWrap.remove();
+      });
+      moreWrap.appendChild(btn);
+      wrap.appendChild(moreWrap);
+    }
+
+    sec.appendChild(wrap);
+    host.appendChild(sec);
+
+    /* jump link */
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + cat.key;
+    a.textContent = cat.title;
+    li.appendChild(a);
+    catnav.appendChild(li);
+  });
+})();
+</script>
+
+<script src="site.js" defer></script>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<div class="mobilebar">
+  <a class="btn btn-primary" href="menu.html">Menu</a>
+  <a class="btn btn-outline" href="gallery.html">Photos</a>
+  <a class="btn btn-outline" href="tel:+61732743018">Call</a>
+</div>
+
+</body>
+</html>

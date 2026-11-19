@@ -1,0 +1,5 @@
+# Hedge Espresso — hedgeespresso.com.au
+User-agent: *
+Allow: /
+
+Sitemap: https://hedgeespresso.com.au/sitemap.xml
